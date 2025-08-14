@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pyrecycle - Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body id="home">
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-left">
+    <a href="index.html"><img src="images/logolight.png" alt="Pyrecycle Logo" class="logo"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#home" class="active">home</a></li>
+    <li><a href="#about">about</a></li>
+    <li><a href="solutions.html">solutions</a></li>
+    <li><a href="contact.html">contact</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://calendly.com/natalienarima/30min" target="_blank" class="button"> meet with us!</a>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero">
+  <h1 class="typing-home">welcome to pyrecycle</h1>
+  <p>recycling datacenter heat for a sustainable future</p>
+</header>
+
+<!-- About Section -->
+<section id="about" class="fade-in">
+<div class="about-left">
+  <h2>about pyrecycle</h2>
+  <p>Pyrecycle aims to transfer waste heat from datacenters to municipalities, 
+    cutting heating/cooling costs for both parties with  no additional energy input.  
+    With 98% effective heat exchangers, we'll simultaneously cool datacenters and heat communities. 
+    Datacenters will not have to use inefficient evaporative cooling, saving on both water and cooling. </p>
+</div>
+
+<div class="about-right">
+    <img src=" images/datacenter.jpg" alt="Datacenter Image" class="datacenter-image">
+</div>
+</section>
+
+<section id="why" class="fade-in">
+    <div class="why-left">
+    <img src=" images/landscape.jpg" alt="Landscape Image" class="landscape-image">
+    </div>
+<div class="why-right">
+  <h2>why should you care?</h2>
+  <p>By 2030, datacenters are expected to use 8% of the world’s energy and billions of gallons of water per hour. In the process, they release crazy amounts of heat and water vapor–exacerbating the greenhouse gas effect. 
+    Only a few miles away, businesses and homes pay for the very same heat and water that datacenters expel by the terawatt. 
+    This issue is too pressing and the solution is too obvious to ignore. </p>
+</div>
+</section>
+
+<section id="us" class="fade-in">
+<div class="us-left">
+  <h2>why us?</h2>
+  <p>Physical solutions are being explored by Equinix and local district heating 
+    operators in Europe, but many companies overlook the biggest bottleneck of reusing 
+    waste heat from datacenters: the fragmented process of outreach, feasibility calculation, 
+    and implementation--lacking scalability. Our platform aims to streamline this process, 
+    making key physical and thermal data easily accessible to each party. 
+    Think Tinder for datacenters and heat-hungry businesses. </p>
+</div>
+
+<div class="us-right">
+    <img src=" images/server.jpg" alt="Server Image" class="server-image">
+</div>
+</section>
+
+
+
+<!-- Footer -->
+<footer>
+  <a>linkedin tba</a> | 
+  <a href="mailto:natalienarima@gmail.com">email</a>
+</footer>
+
+<script>
+// Navbar scroll background
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 100);
+});
+
+// Scroll reveal animations
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 800);
+});
+ScrollReveal().reveal('.fade-in', { delay: 200, distance: '40px', origin: 'bottom', duration: 800 });
+</script>
+
+</body>
+</html>
+
+

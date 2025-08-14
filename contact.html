@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Pyrecycle</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body id="contact">
+
+<!-- Navigation -->
+<nav id="navbar">
+  <div class="nav-left">
+    <a href="index.html"><img src="images/logo.png" alt="Pyrecycle Logo" class="logo"></a>
+  </div>
+  <ul class="nav-links">
+    <li><a href="index.html#home">home</a></li>
+    <li><a href="index.html#about">about</a></li>
+    <li><a href="solutions.html">solutions</a></li>
+    <li><a href="contact.html" class="active">   contact us</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://calendly.com/natalienarima/30min" target="_blank" class="button"> meet with us!</a>
+  </div>
+</nav>
+
+<!-- Contact Hero -->
+<header class="hero">
+  <h1 class="typing-contact">contact us</h1>
+</header>
+
+<!-- Contact Content -->
+<section class="contact-content fade-in">
+  <div class="contact-left">
+    <h2>We want to hear from you!</h2>
+    <br><br>
+    <p>Datacenter heat reuse is a complicated and brand-new topic. We would love to talk more about it!</p><br>
+    <p>Whether you're a datacenter with existing heat reuse infrastructure, a utility looking to get involved, or a business owner interested in heat reuse, we want to connect.</p>
+    <p>Feel free to reach out with any questions or ideas.</p>
+    <a href="mailto:natalienarima@gmail.com">email</a>
+  </div>
+
+  <div class="contact-right">
+    <h2>Get in Touch</h2>
+    <form action="https://formsubmit.co/natalienarima@gmail.com" method="POST">
+      <label for="interest">I am...</label>
+      <select id="interest" name="interest" required>
+        <option value="">-- select an option --</option>
+        <option>A datacenter with existing heat reuse infrastructure</option>
+        <option>A datacenter looking to get involved</option>
+        <option>A utility looking to get involved</option>
+        <option>A business owner looking to get involved</option>
+        <option>A potential investor/I just want to learn more!</option>
+
+      </select>
+
+      <label for="name">name*</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">email*</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">message*</label>
+      <textarea id="message" name="message" rows="6" required></textarea>
+
+      <input type="hidden" name="_next" value="https://pyrecycle.com/thank-you.html">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit" class="button">submit</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <a>linkedin tba</a> | 
+  <a href="mailto:natalienarima@gmail.com">email</a>
+</footer>
+
+<script>
+window.addEventListener("scroll", () => {
+  const navbar = document.getElementById("navbar");
+  navbar.classList.toggle("scrolled", window.scrollY > 1000);
+});
+ScrollReveal().reveal('.fade-in', { delay: 200, distance: '40px', origin: 'bottom', duration: 800 });
+</script>
+
+</body>
+</html>
